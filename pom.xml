@@ -17,6 +17,11 @@
     <maven.compiler.target>11</maven.compiler.target>
     <spring.version>5.2.0.RELEASE</spring.version>
     <servlets.version>3.1.0</servlets.version>
+    <hibernate.version>5.4.7.Final</hibernate.version>
+    <mysql.version>8.0.25</mysql.version>
+    <slf4j.version>1.7.32</slf4j.version>
+    <jstl.version>1.2.1</jstl.version>
+    <tld.version>1.1.2</tld.version>
   </properties>
 
   <dependencies>
@@ -26,10 +31,40 @@
       <version>${spring.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>${servlets.version}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp.jstl</groupId>
+      <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${tld.version}</version>
     </dependency>
   </dependencies>
 

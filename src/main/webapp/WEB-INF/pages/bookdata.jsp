@@ -6,7 +6,7 @@
 <body>
 <h1>Book Details</h1>
 
-<table>
+<table border="2" width="70%" cellpadding="2">
     <tr>
         <th width="80">ID</th>
         <th width="120">Title</th>
@@ -17,7 +17,7 @@
         <td>${book.id}</td>
         <td>${book.bookTitle}</td>
         <td>${book.bookAuthor}</td>
-        <td>${book.price / 100}.${book.price % 100}</td>
+        <td>${book.price}</td>
     </tr>
 </table>
 </body>

@@ -13,7 +13,7 @@
 <h1>Book List</h1>
 
 <c:if test="${!empty listBooks}">
-    <table>
+    <table border="2" width="70%" cellpadding="2">
         <tr>
             <th width="80">ID</th>
             <th width="120">Title</th>
